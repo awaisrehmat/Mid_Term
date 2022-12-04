@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react'; 
 import { useState } from 'react';
-import { StyleSheet, Text, View,Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, View,Button, ScrollView, YellowBox } from 'react-native';
 
 export default function App() {
 
@@ -20,11 +20,14 @@ export default function App() {
 
   const [Items, setItems] = useState([
     {key:1,item:'item 1'},
-    {key:1,item:'item 2'},
-    {key:1,item:'item 3'},
-    {key:1,item:'item 4'},
-    {key:1,item:'item 5'},
-    {key:1,item:'item 6'},
+    {key:2,item:'item 2'},
+    {key:3,item:'item 3'},
+    {key:4,item:'item 4'},
+    {key:5,item:'item 5'},
+    {key:6,item:'item 6'},
+    {key:7,item:'item 7'},
+    {key:8,item:'item 8'},
+    {key:9,item:'item 9'},
     
   ])
 
@@ -32,18 +35,18 @@ export default function App() {
 
   return (
 
-   <ScrollView>
-    
+   <ScrollView style={styles.container}>
+    {
       Items.map((i) => {
         return(
-          <view key={i.key}>
-            <Text>{i.item}</Text>
-          </view>
+          <View style={styles.items} key={i.key}>
+            <Text style={{fontSize:40}}>{i.item}</Text>
+          </View>
 
         )
 
       })
-
+    }
 
       {/* <View style={styles.view1}><Text>1</Text></View>
       <View style={styles.view2}><Text>2</Text></View>
@@ -67,11 +70,19 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop:50,
     //flexDirection:'row',
-    backgroundColor: 'blue',
+    // backgroundColor: 'blue',
+    // alignItems: 'center',
+    // justifyContent: 'space-around',
+  },
+  items:{
+    margin:10,
+    height:80,
+    backgroundColor:'grey',
     alignItems: 'center',
     justifyContent: 'space-around',
-  },
+  }
 
   // view1: {
   //   height:100,
