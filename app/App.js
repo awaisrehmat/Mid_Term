@@ -5,17 +5,26 @@ import { StyleSheet, Text, View,Button } from 'react-native';
 
 export default function App() {
 
-  const [name, setname] = useState('Awais')
+  
+  const [number, setnumber] = useState(0)
+  const [counter, setcounter] = useState(0)
+  const [Current, setCurrent] = useState(true)
 
   const Press = () =>{
-    setname('Awais Ali')
+    // setname('Awais Ali')
+    setnumber(number+5)
+    setcounter(counter+1)
+    setCurrent(false)
 
   }
 
   return (
+
     <View style={styles.container}>
-      <Text>{name}</Text>
+      <Text>{number}</Text>
+      <Text>{Current ? 'Before' : 'After'}</Text>
       <Button title='push me' onPress={Press}></Button>
+      <Text>Button tapped {counter} times</Text>
       <StatusBar style="auto" />
     </View>
   );
