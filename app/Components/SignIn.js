@@ -13,9 +13,14 @@ export default function App() {
   return (
     <View style={styles.container}>
 
+
+        
        <Image 
        style = {styles.logo}
        source = {require("../assets/logo.png")}/>
+       <Text style={{marginBottom:40,fontSize:35,fontFamily:'lucida grande',color:'#6D67E4'}}>PaperOut.com</Text>
+
+
        <View style={styles.inputView}>
   <TextInput
     style={styles.TextInput}
@@ -57,12 +62,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   logo:{
-  height: 120,
+  height: 150,
   width: 100,
-  marginBottom: 40
   },
   inputView: {
-    backgroundColor: "#FFC0CB",
+    backgroundColor: "#CFFDE1",
     borderRadius: 30,
     width: "70%",
     height: 45,
@@ -87,7 +91,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 40,
-    backgroundColor: "#FF1493",
+    backgroundColor: "#7FE9DE",
   },
   
  
