@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react'; 
 import { useState } from 'react';
 import { StyleSheet, Text, View,Button, TouchableOpacity, Image, TextInput} from 'react-native';
+import { AppOpenAd, InterstitialAd, RewardedAd, BannerAd, TestIds } from 'react-native-google-mobile-ads';
 
 export default function App() {
 
