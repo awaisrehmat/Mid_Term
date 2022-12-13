@@ -2,13 +2,19 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react'; 
 import { useState } from 'react';
 import { StyleSheet, Text, View,Button, TouchableOpacity, Image, TextInput} from 'react-native';
-import { AppOpenAd, InterstitialAd, RewardedAd, BannerAd, TestIds } from 'react-native-google-mobile-ads';
+import  'expo-dev-client';
+
+
+
 
 export default function App() {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+
+    //Android Banner: ca-app-pub-9359901491826720/3449700000
+    //Android Interstitial: ca-app-pub-9359901491826720/1886703876
 
 
   return (
