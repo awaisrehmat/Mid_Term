@@ -6,8 +6,7 @@ import  'expo-dev-client';
 
 
 
-
-export default function App() {
+export default function App({navigation}) {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -15,6 +14,11 @@ export default function App() {
 
     //Android Banner: ca-app-pub-9359901491826720/3449700000
     //Android Interstitial: ca-app-pub-9359901491826720/1886703876
+
+    handleClick = () =>{
+      navigation.navigate('Home');
+
+    }
 
 
   return (
@@ -50,14 +54,14 @@ export default function App() {
 <TouchableOpacity>
   <Text style={styles.forgot_button}>Forgot Password?</Text>
 </TouchableOpacity>
+<button onClick={handleClick} placeholder='Login'></button>
 
-
-<TouchableOpacity style={styles.loginBtn}>
+{/* <TouchableOpacity style={styles.loginBtn}>
   <Text style={styles.loginText}>LOGIN</Text>
-</TouchableOpacity>
+</TouchableOpacity> */}
     </View>
 
-
+ 
     
   );
 }
