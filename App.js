@@ -8,11 +8,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './Components/Home';
 
 
+const Stack = createNativeStackNavigator();
 
+export default function App(props) {
 
-export default function App() {
-
-  const Stack = createNativeStackNavigator();
+  
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='SignIn'>
