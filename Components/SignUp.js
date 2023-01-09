@@ -26,7 +26,7 @@ export default function App() {
        <Image 
        style = {styles.logo}
        source = {require("../assets/logo.png")}/>
-       <Text style={{marginBottom:40,fontSize:35,fontFamily:'lucida grande',color:'#6D67E4'}}>
+       <Text style={{marginBottom:40,fontSize:35,color:'#6D67E4'}}>
         PaperOut.com</Text>
 
 
