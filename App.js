@@ -5,7 +5,8 @@ import { StyleSheet, Text, View,Button, ScrollView, Image } from 'react-native';
 import SignIn from './Components/SignIn';
 import SignUp from './Components/SignUp';
 
-import Home from './Components/Home';
+import Home from './Components/HomeScreen';
+
 
 
 
@@ -22,12 +23,11 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  // container: {
+  //   backgroundColor: '#fff',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  // },
   
 
   }

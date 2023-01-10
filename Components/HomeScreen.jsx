@@ -117,17 +117,18 @@ style={{height:20,width:20,marginLeft:200}}
     <Text>Search</Text>
     </TouchableOpacity> */}
 
+    
+
+<FlatList
+data={items}
+renderItem={renderItem}
+keyExtractor={item => item.id}
+ListHeaderComponent={
+  <Text style={styles.header}>Read Quran</Text>
+}
+/>
 
 
-<Text style={styles.header}>Choose your choice</Text>    
-<View style={{ flexDirection: 'row', flexWrap: 'wrap',marginTop:20,marginBottom:60 }}>
-    <View style={{ width: '40%', height: 100, backgroundColor: 'white',marginLeft:15,marginRight:25,marginBottom:15,borderRadius:30 }} ><Text style={{marginLeft:19,marginTop:40}}>Resume Reading</Text></View>
-    <View style={{ width: '40%', height: 100, backgroundColor: 'white',marginLeft:15,marginRight:25,borderRadius:30 }} ><Text style={{marginLeft:40,marginTop:40}}>Read Quran</Text></View>
-    <View style={{ width: '40%', height: 100, backgroundColor: 'white',marginLeft:15,marginRight:25,borderRadius:30 }} ><Text style={{marginLeft:60,marginTop:40}}>Juz</Text></View>
-    <View style={{ width: '40%', height: 100, backgroundColor: 'white',marginLeft:15,marginRight:25,borderRadius:30, marginBottom:15}} ><Text style={{marginLeft:60,marginTop:40}}>Surah</Text></View>
-    <View style={{ width: '40%', height: 100, backgroundColor: 'white',marginLeft:15,marginRight:25,borderRadius:30 }} ><Text style={{marginLeft:55,marginTop:40}}>Setting</Text></View>
-    <View style={{ width: '40%', height: 100, backgroundColor: 'white',marginLeft:15,marginRight:25,borderRadius:30 }} ><Text style={{marginLeft:50,marginTop:40}}>BookMark</Text></View>
-  </View>
 
 
     </View>
